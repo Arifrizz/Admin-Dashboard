@@ -6,7 +6,7 @@
 
 .layout {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   display: grid;
   grid-template: 25vh 1fr/ 15vw 1fr;
   gap: 2vw;
@@ -22,6 +22,8 @@
 .navbar {
   grid-row: 1/2;
   grid-column: 2/5;
+  display: grid;
+  grid-template-rows: 3vw 1fr;
 }
 
 
@@ -31,7 +33,7 @@
   background-color: #1992d4;
   display: grid;
   grid-template-rows: 15vh 1fr 1fr;
-  grid-template-columns: 1fr
+
 }
 
 .d-image{
@@ -82,4 +84,115 @@ a{
   align-items: center;
   gap: 1rem;
   font-weight: bold;
+}
+
+
+
+
+
+
+
+/*                   Navbar                 */
+
+
+
+
+.search-s{
+  grid-row: 1/2;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.magnify{
+padding-left: 2rem;
+
+
+
+}
+.pfp img{
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.searchh{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 70%;
+  height: 70%;
+}
+
+
+.input-s{
+  width: 50vw;
+  height: 5vh;
+}
+
+input[type="text"] {
+  display: flex;
+  flex: 1;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  background-color: #e2e8f0;  
+  outline: none;
+  box-shadow: 0px 0px 5px none;
+  border:none
+}
+
+.pfpp{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.name{
+  font-weight: bold;
+}
+
+.profile-card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.usr-name{
+  font-size: 0.8rem;
+  font-weight: bolder;
+}
+
+
+.hi-there{
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.alignn{
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+
+.new{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  border-radius: 1rem;
+  height: 2rem;
+  width: 5rem;
+  font-weight: bolder;
+  color: white;
+  background-color: #1992d4;
+}
+
+.buttons{
+  display: flex;
+  padding-right: 1rem;
+  gap: 4rem;
 }
